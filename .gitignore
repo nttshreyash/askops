@@ -1,0 +1,23 @@
+# Create .gitignore
+@"
+# Node / build
+node_modules/
+dist/
+build/
+.vite/
+
+# Python
+__pycache__/
+*.pyc
+.env
+.venv
+venv/
+
+# Docker / misc
+*.log
+.DS_Store
+.idea/
+.vscode/
+"@ > .gitignore
+
+.env

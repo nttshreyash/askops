@@ -1,0 +1,78 @@
+﻿{
+    "item":  {
+                 "sys_id":  "67e2f2da4fff0200086eeed18110c7dd",
+                 "name":  "Firewall Rule Change",
+                 "short_description":  "Cisco Firewall Appliance"
+             },
+    "variables":  [
+                      {
+                          "id":  "565841834f7b4200086eeed18110c71c",
+                          "name":  "inbound_ip",
+                          "label":  "Inbound IP address?",
+                          "type":  "28",
+                          "mandatory":  true,
+                          "default":  "",
+                          "reference_table":  null,
+                          "choices":  null,
+                          "lookup":  false
+                      },
+                      {
+                          "id":  "607801834f7b4200086eeed18110c774",
+                          "name":  "outbound_ip",
+                          "label":  "Outbound IP address",
+                          "type":  "28",
+                          "mandatory":  true,
+                          "default":  "",
+                          "reference_table":  null,
+                          "choices":  null,
+                          "lookup":  false
+                      },
+                      {
+                          "id":  "7b2801834f7b4200086eeed18110c76e",
+                          "name":  "port_number",
+                          "label":  "What is the port number?",
+                          "type":  "6",
+                          "mandatory":  true,
+                          "default":  "",
+                          "reference_table":  null,
+                          "choices":  null,
+                          "lookup":  false
+                      },
+                      {
+                          "id":  "6ae4f79a4f334200086eeed18110c77b",
+                          "name":  "business_purpose",
+                          "label":  "What is the business purpose",
+                          "type":  "3",
+                          "mandatory":  true,
+                          "default":  "",
+                          "reference_table":  null,
+                          "choices":  null,
+                          "lookup":  false,
+                          "source":  "variable_set"
+                      },
+                      {
+                          "id":  "aab57f9a4f334200086eeed18110c71b",
+                          "name":  "cost_center",
+                          "label":  "What cost center will be billed?",
+                          "type":  "reference",
+                          "mandatory":  true,
+                          "default":  "",
+                          "reference_table":  "cmn_department",
+                          "choices":  null,
+                          "lookup":  true,
+                          "source":  "variable_set"
+                      },
+                      {
+                          "id":  "faa2f39a4f334200086eeed18110c795",
+                          "name":  "primary_contact",
+                          "label":  "Who is the primary contact?",
+                          "type":  "reference",
+                          "mandatory":  true,
+                          "default":  "",
+                          "reference_table":  "sys_user",
+                          "choices":  null,
+                          "lookup":  true,
+                          "source":  "variable_set"
+                      }
+                  ]
+}
